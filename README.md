@@ -1,4 +1,4 @@
-# AI-Foundations
+# Artificial Intelligence Foundations
 Learning The Foundation of Artificial Intelligence, Machine Learning, Deep Learning. and Reinforcement Learning
 
 ## Foundational AI, ML & DL Playlist 
