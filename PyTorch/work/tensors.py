@@ -91,4 +91,13 @@ o = torch.rand(3,3)
 p = torch.rand(3,3)
 
 # way 1
-q = 
+q = o * p
+print(q, end='\n')
+
+# way 2
+q = torch.mul(o,p)
+print(q)
+
+# way 3
+p.mul_(o)
+print(p)
