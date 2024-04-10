@@ -35,7 +35,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/home/trainora/Videos/AI Foundation/PyTorch/work/torch_"
+VIRTUAL_ENV="/home/trainora/Videos/AI-Foundations/PyTorch/work/torch_"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

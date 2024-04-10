@@ -1,6 +1,4 @@
-#!/bin/sh
-'''exec' "/home/trainora/Videos/AI Foundation/PyTorch/work/torch_/bin/python3" "$0" "$@"
-' '''
+#!/home/trainora/Videos/AI-Foundations/PyTorch/work/torch_/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
