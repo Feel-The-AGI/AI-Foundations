@@ -68,7 +68,7 @@ size = 64
 def create_tensor(size: int):
     tnsor = torch.rand(size)
     tnsor1 = torch.rand(size)
-    fnl_tensor = mul_(tnsor, tnsor1).to(device) # moves object to available device
+    tnsor1.mul_(tnsor).to(device) # moves object to available device
     return tnsor
 
 print(create_tensor(size))
