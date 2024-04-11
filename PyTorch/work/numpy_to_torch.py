@@ -68,7 +68,10 @@ size = 64
 def create_tensor(size: int):
     tnsor = torch.rand(size)
     tnsor1 = torch.rand(size)
-    tnsor1.mul_(tnsor).to(device) # moves object to available device
-    return tnsor
+    fnl_tnsor = tnsor1.mul_(tnsor**size).to(device) # moves object to available device
+
+    # using a gpu tensor it will cause an error if youu convert it to numpy as numpy only handles cpu tasks.
+    # fnl_tnsor.numpy() # only works on cpu
+    return fnl_tnsor
 
 print(create_tensor(size))
