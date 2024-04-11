@@ -40,10 +40,13 @@ print(d)
 
 # THESE WARNINGS WILL HAPPEN WHEN YOU'RE DEALING WITH GPU, IT WOULD SAY ITS NOT ABLE TO DETECT A GPU OR SOME SIMILAR ERROR, TELLING YOU THE MEMORY YOU'RE POINTING TO DOESNT EXIST.
 # HERES HOW TO TROUBLESHOOT IT
+# LETS ALSO CREATE A TENSOR ON THE GPU
 
 if torch.cuda.is_available():
     device = torch.device('cuda')
     print('GPU Found... Using GPU')
+    e = torch.ones(2, 7, dtype=torch.float32)
+    print(e)
 else:
     device = torch.device('cpu')
     print('GPU not found... Using CPU')
