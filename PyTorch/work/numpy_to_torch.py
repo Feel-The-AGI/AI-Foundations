@@ -75,3 +75,10 @@ def create_tensor(size: int):
     return fnl_tnsor
 
 print(create_tensor(size))
+
+# =======================================================
+# if you need to calculate tensor gradients when reaching optimizations steps do the below
+# this tells torch to calculate the gradient of the tensor when you reach the optimizations stage
+# whenever theres a variable in a model that needs to be optimized we need the gradients
+tensor_grad = torch.rand(5**size, requires_grad=True)
+print(tensor_grad)
