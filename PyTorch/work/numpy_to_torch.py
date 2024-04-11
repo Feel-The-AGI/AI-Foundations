@@ -42,11 +42,33 @@ print(d)
 # HERES HOW TO TROUBLESHOOT IT
 # LETS ALSO CREATE A TENSOR ON THE GPU
 
+"""
 if torch.cuda.is_available():
     device = torch.device('cuda')
     print('GPU Found... Using GPU')
-    e = torch.ones(2, 7, dtype=torch.float32)
+    e = torch.ones(2, device=device)
     print(e)
 else:
     device = torch.device('cpu')
     print('GPU not found... Using CPU')
+"""
+
+# THE ABOVE IS CLUTTERED, LETS WRITE NEAT CODE
+
+device = ['cuda', 'cpu']
+if torch.cuda.is_available():
+    device = torch.device(device[0])
+    print('GPU found... using GPU.')
+else:
+    device = torch.device(device[1])
+    print('GPU not available... using CPU.')
+
+size = 64 
+
+def create_tensor(size: int):
+    tnsor = torch.rand(size)
+    tnsor1 = torch.rand(size)
+    fnl_tensor = mul_(tnsor, tnsor1).to(device) # moves object to available device
+    return tnsor
+
+print(create_tensor(size))
