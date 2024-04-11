@@ -87,17 +87,73 @@ import torch
 # ==========================================================
 
 # multiplying matrices
-o = torch.rand(3,3)
-p = torch.rand(3,3)
+# o = torch.rand(3,3)
+# p = torch.rand(3,3)
 
 # way 1
-q = o * p
-print(q, end='\n')
+# q = o * p
+# print(q, end='\n')
 
 # way 2
-q = torch.mul(o,p)
-print(q)
+# q = torch.mul(o,p)
+# print(q, end='\n')
 
 # way 3
-p.mul_(o)
-print(p)
+# p.mul_(o)
+# print(p, end='\n')
+
+# ==========================================================
+
+# dividing matrices
+# r = torch.rand(2,2)
+# s = torch.rand(2,2)
+
+# way 1
+# t = r / s
+# print(t)
+
+# way 2
+# t = torch.div(r,s)
+# print(t)
+
+# way 3
+# inplace division
+# r.div_(s)
+# print(r)
+
+
+
+# ==========================================================
+
+
+# SLICING
+# u = torch.rand(5,4)
+# print(u)
+# print(u[1, 1])
+
+# get the actual full figure only if you have one element in the tensor
+# print(u[1, 1].item())
+
+
+# ==========================================================
+
+# RESHAPING
+
+v = torch.rand(8,8)
+print(v)
+
+# w = v.view(63) # 1 dimension | th size here must not be less than the inherited shape ==> 8*8=64. Hence the minimum value passed here should be 64
+# print(w) # This will raise a 'RuntimeError: shape '[5]' is invalid for input of size 64' error
+
+# correct implementation
+w = v.view(64)
+# print(w)
+
+
+# you dont have to explicitly determine the size, torch does it automatically. The below implementation is very helpfull especially when youre dealng with voluminous unknown dimensions. -- Print the shape and determine how to eveninly split the items into batches
+print(w.size()) # Get size
+
+w = v.view(-1, 8) # -1 to get the end of the matrix, then in batches of 32 to get the sum of 64. Equally yo can bring it all the way down to 16,8,4 or even 2. It just needs to be equal.
+
+# print(w)
+
