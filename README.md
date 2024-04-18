@@ -11,9 +11,12 @@ Learning The Foundation of Artificial Intelligence, Machine Learning, Deep Learn
 
 3. **CS50 AI** - [Course](https://pll.harvard.edu/course/cs50s-introduction-artificial-intelligence-python)
 
-4. **Neural Networks** - [Playlist](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=Hi3tXfnZ9DPJsjLF)
+4. **3Blue1Brown: Neural Networks** - [Playlist](https://youtube.com/playlist?list=PLZHQObOWTQDNU6R1_67000Dx_ZCJB-3pi&si=Hi3tXfnZ9DPJsjLF)
 
-5. **Andrej Karpathy** - [Playlist](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=sdYudjGCS4mTWKyq_)
+5. **Andrej Karpathy: Neural Nets Zero to Hero** - [Playlist](https://youtube.com/playlist?list=PLAqhIrjkxbuWI23v9cThsA9GvCAUhRvKZ&si=sdYudjGCS4mTWKyq)
+
+6. **ChrisMcCormicAI: Coding a Paper** - [Playlist](https://youtube.com/playlist?list=PLam9sigHPGwOe8VDoS_6VT4jjlgs9Uepb&si=VH6d-as8LL92d_8h)
+
 
 ## Foundational Mathematics
 
